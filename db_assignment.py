@@ -8,7 +8,7 @@ with conn:
     cur = conn.cursor() 
     cur.execute("CREATE TABLE IF NOT EXISTS tbl_files ( \
         ID INTEGER PRIMARY KEY AUTOINCREMENT, \
-        file_name)
+        file_name TEXT) \
         ")
     conn.commit()
 conn.close()
@@ -23,7 +23,7 @@ conn = sqlite3.connect('db_assignment.db')
 with conn:
     cur = conn.cursor()
     for i in fileList:
-        if file.endswith('.txt'):
+        if i.endswith('.txt'):
             cur.execute("INSERT INTO tbl_files (file_name) VALUES (?) ",\
             (i,))
             print(i)
