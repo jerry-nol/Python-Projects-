@@ -1,0 +1,24 @@
+﻿body{
+    background-image: url(../img/HP_Records.jpg);
+    background-position: center center;
+    background-size: auto;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: aqua;
+    font-size: large;
+}
+
+#center {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: mediumpurple;
+    color:white;
+}
